@@ -12,3 +12,8 @@ db.customers.find({
 db.products.find({
     price: 2000
 });
+
+// where items.product_id = 1
+db.orders.find({
+    "items.product_id": 1
+});
