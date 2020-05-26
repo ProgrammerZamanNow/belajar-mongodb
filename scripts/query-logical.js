@@ -34,9 +34,7 @@ db.products.find({
         },
         {
             category: {
-                $not: {
-                    $eq: 'food'
-                }
+                $ne: 'food'
             }
         }
     ]
