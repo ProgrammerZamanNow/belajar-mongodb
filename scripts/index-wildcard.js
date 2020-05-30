@@ -1,4 +1,3 @@
-// db.userData.createIndex( { "userMetadata.$**" : 1 } )
 // membuat wildcard index
 db.customers.createIndex({
     "customFields.$**" : 1
