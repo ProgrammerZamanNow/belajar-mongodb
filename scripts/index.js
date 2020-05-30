@@ -15,6 +15,9 @@ db.products.find({
 db.products.find({
     category: "food"
 }).explain();
+db.products.find({}).sort({
+    category:1
+}).explain();
 
 // Create index at price and tags in products collection
 db.products.createIndex({
@@ -30,6 +33,12 @@ db.products.find({
 
 // Debugging query optimization
 db.products.find({
+    stock: 10
+}).explain();
+db.products.find({
     stock: 10,
+    tags: "popular"
+}).explain();
+db.products.find({
     tags: "popular"
 }).explain();
