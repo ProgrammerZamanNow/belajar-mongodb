@@ -14,10 +14,7 @@ db.createRole({
 });
 
 // Get all roles
-db.getRoles();
-
-// Get detail role
-db.getRole( "find_and_insert", { showPrivileges: true } )
+db.getRoles({ showPrivileges: true });
 
 // update role
 db.updateRole("find_and_insert", {
