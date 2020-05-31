@@ -1,0 +1,23 @@
+@startuml
+
+package "Mongo Cluster" {
+node Mongo1 {
+    file "Product <primary>" 
+    file "Customer <secondari 1>"
+    file "Order <secondary 2>"
+}
+
+node Mongo2 {
+    file "Product <secondary 1>"
+    file "Customer <primary>"
+    file "Order <secondary 1>"
+}
+
+node Mongo3 {
+    file "Product <secondary 2>"
+    file "Customer <secondari 2>"
+    file "Order <primary>"
+}
+}
+
+@enduml
