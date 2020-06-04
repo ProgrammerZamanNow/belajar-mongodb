@@ -1,7 +1,7 @@
 // select _id, name, category from products
 db.products.find({}, {
     name: 1,
-    cateogry: 1
+    category: 1
 });
 
 // select _id, name, category, price from products
