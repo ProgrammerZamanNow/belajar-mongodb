@@ -5,6 +5,6 @@ services:
     container_name: mongo-unsecure
     image: mongo:4.2
     ports:
-      - 37017:27017
+      - 37027:27017
     command: mongod
     # command: mongod --auth
